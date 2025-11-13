@@ -1,0 +1,66 @@
+{
+  "job_title": "Engineer Trainee (Fresher Graduates)",
+  "company_name": "Sopra Steria India",
+  "employment_type": "Full-time",
+  "experience_required": {
+    "min_years": 0,
+    "max_years": 0,
+    "level": "Entry"
+  },
+  "skills": {
+    "explicit": [
+      "r",
+      "git"
+    ],
+    "implicit": [
+      "data analysis",
+      "collaboration",
+      "code management",
+      "version control",
+      "statistics"
+    ],
+    "soft_skills": []
+  },
+  "responsibilities": [
+    "Sopra Steria places people at the heart of everything it does and is committed to putting \ndigital to work for its clients in order to build a positive future for all"
+  ],
+  "preferred_qualifications": [
+    "Degrees: & Branches- B-Tech/BE, CSE, IT",
+    "Batch: -2026 Batch",
+    "CTC: -INR 6.0 Lakhs CTC",
+    ">=70 % in Std X, XII, &",
+    ">=60% in Graduation (all semesters including optional subjects)",
+    "Service Agreement: - 3 Years, Rs 2Lakh",
+    "Target Joining Date: - H2 2026",
+    "Work Shift: timings-Flexible to work in shift timings",
+    "Job Locations: -, \u27a2Noida, \u27a2Chennai, \u27a2Bangalore"
+  ],
+  "domain": "Information Technology",
+  "language": "en",
+  "raw_keywords": [
+    "sopra",
+    "steria",
+    "work",
+    "digital",
+    "engineer",
+    "trainee",
+    "fresher",
+    "graduates",
+    "business",
+    "target",
+    "tech",
+    "batch",
+    "years",
+    "shift",
+    "timings",
+    "test",
+    "interview",
+    "round",
+    "clients"
+  ],
+  "ambiguity_score": 0.8888888888888888,
+  "errors_detected": [
+    "Low Ambiguity Score - Incomplete Extraction"
+  ],
+  "parsed_successfully": true
+}

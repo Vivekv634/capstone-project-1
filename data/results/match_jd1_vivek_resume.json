@@ -1,0 +1,15 @@
+{
+  "jd_file": "/home/vertexbit/Documents/Code PlayGround/Python/ai-ats/data/processed/jd1_jd.json",
+  "resume_file": "/home/vertexbit/Documents/Code PlayGround/Python/ai-ats/data/processed/vivek_resume_tagged.json",
+  "match": {
+    "score": 10.3,
+    "reasoning": "Experience is reasonably matched.",
+    "details": {
+      "keyword_overlap": 2.08,
+      "skill_overlap": 4.55,
+      "experience_score": 80.0,
+      "text_similarity": 1.92,
+      "embedding_similarity": 0.0
+    }
+  }
+}

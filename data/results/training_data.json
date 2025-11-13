@@ -1,0 +1,191 @@
+[
+  {
+    "features": {
+      "keyword_overlap": 0.0208,
+      "skill_overlap": 0.0444,
+      "experience_score": 0.8,
+      "text_similarity": 0.0192,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.1027,
+    "timestamp": "2025-11-11T00:59:15.028416"
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0208,
+      "skill_overlap": 0.0435,
+      "experience_score": 0.8,
+      "text_similarity": 0.0192,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.1023,
+    "timestamp": "2025-11-11T01:01:19.810506"
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0208,
+      "skill_overlap": 0.0435,
+      "experience_score": 0.8,
+      "text_similarity": 0.0192,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.1023,
+    "timestamp": "2025-11-11T01:05:15.477415"
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0208,
+      "skill_overlap": 0.0426,
+      "experience_score": 0.8,
+      "text_similarity": 0.0192,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.102,
+    "jd_name": "jd1",
+    "resume_name": "vivek_resume",
+    "timestamp": 1762803397.7106328
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.0385,
+      "experience_score": 0.4,
+      "text_similarity": 0.0121,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.0547,
+    "jd_name": "jd1",
+    "resume_name": "Abhay_Pratap_Singh",
+    "timestamp": 1762803397.7158256
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.0,
+      "experience_score": 0.8,
+      "text_similarity": 0.036699999999999997,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.0837,
+    "jd_name": "jd2",
+    "resume_name": "vivek_resume",
+    "timestamp": 1762803397.7229414
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.0,
+      "experience_score": 0.4,
+      "text_similarity": 0.031200000000000002,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.0431,
+    "jd_name": "jd2",
+    "resume_name": "Abhay_Pratap_Singh",
+    "timestamp": 1762803397.730253
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0208,
+      "skill_overlap": 0.0444,
+      "experience_score": 0.8,
+      "text_similarity": 0.0192,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.1027,
+    "jd_name": "jd1",
+    "resume_name": "vivek_resume",
+    "timestamp": 1762924899.371233
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.04,
+      "experience_score": 0.4,
+      "text_similarity": 0.0121,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.0552,
+    "jd_name": "jd1",
+    "resume_name": "Abhay_Pratap_Singh",
+    "timestamp": 1762924899.3763957
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.0,
+      "experience_score": 0.8,
+      "text_similarity": 0.036699999999999997,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.0837,
+    "jd_name": "jd2",
+    "resume_name": "vivek_resume",
+    "timestamp": 1762924899.383606
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.0,
+      "experience_score": 0.4,
+      "text_similarity": 0.031200000000000002,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.0431,
+    "jd_name": "jd2",
+    "resume_name": "Abhay_Pratap_Singh",
+    "timestamp": 1762924899.388692
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0208,
+      "skill_overlap": 0.0455,
+      "experience_score": 0.8,
+      "text_similarity": 0.0192,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.10300000000000001,
+    "jd_name": "jd1",
+    "resume_name": "vivek_resume",
+    "timestamp": 1762939136.2807565
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.04,
+      "experience_score": 0.4,
+      "text_similarity": 0.0121,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.0552,
+    "jd_name": "jd1",
+    "resume_name": "Abhay_Pratap_Singh",
+    "timestamp": 1762939136.2853496
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.0,
+      "experience_score": 0.8,
+      "text_similarity": 0.036699999999999997,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.0837,
+    "jd_name": "jd2",
+    "resume_name": "vivek_resume",
+    "timestamp": 1762939136.2926822
+  },
+  {
+    "features": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.0,
+      "experience_score": 0.4,
+      "text_similarity": 0.031200000000000002,
+      "embedding_similarity": 0.0
+    },
+    "score": 0.0431,
+    "jd_name": "jd2",
+    "resume_name": "Abhay_Pratap_Singh",
+    "timestamp": 1762939136.2995667
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "jd_file": "/home/vertexbit/Documents/Code PlayGround/Python/ai-ats/data/processed/jd2_jd.json",
+  "resume_file": "/home/vertexbit/Documents/Code PlayGround/Python/ai-ats/data/processed/Abhay_Pratap_Singh_tagged.json",
+  "match": {
+    "score": 4.31,
+    "reasoning": "Limited alignment; consider skill gaps or experience mismatch.",
+    "details": {
+      "keyword_overlap": 0.0,
+      "skill_overlap": 0.0,
+      "experience_score": 40.0,
+      "text_similarity": 3.12,
+      "embedding_similarity": 0.0
+    }
+  }
+}

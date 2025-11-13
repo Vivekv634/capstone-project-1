@@ -9,7 +9,6 @@ from typing import Dict, Any, List, Optional
 import spacy
 import nltk
 # from nltk.corpus import wordnet, stopwords
-from transformers import pipeline
 import torch
 from datetime import datetime
 
@@ -29,10 +28,11 @@ except LookupError:
 # Configuration for matching weights and paths
 MATCH_CONFIG = {
     "weights": {
-        "keyword_overlap": 0.3,
-        "skill_overlap": 0.4,
+        "keyword_overlap": 0.25,
+        "skill_overlap": 0.35,
         "experience_score": 0.1,
-        "text_similarity": 0.2
+        "text_similarity": 0.1,
+        "embedding_similarity": 0.2
     },
     "experience_max_diff": 5  # For normalization
 }
@@ -44,38 +44,44 @@ tfidf_cache = {}
 device = 0 if torch.cuda.is_available() else -1
 print(f"Using device: {'GPU' if device == 0 else 'CPU'}")
 try:
+    from transformers import pipeline
     generator = pipeline('text2text-generation', model='t5-small', device=device)
 except Exception as e:
     print(f"Warning: Could not load transformer model: {e}")
     generator = None
 
+# Load sentence transformer model for embeddings
+try:
+    from sentence_transformers import SentenceTransformer
+    embed_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2', device='cuda' if torch.cuda.is_available() else 'cpu')
+    print(f"Loaded embedding model on {'GPU' if torch.cuda.is_available() else 'CPU'}")
+except Exception as e:
+    print(f"Warning: Could not load embedding model: {e}")
+    embed_model = None
+
 def generate_reasoning(details: Dict[str, float]) -> str:
     """Generate natural language reasoning using transformer with improved prompt."""
     if not generator:
-        # Enhanced fallback template
+        # Dynamic reasoning based on configurable thresholds
+        reasoning_config = [
+            ('keyword_overlap', 70, 50, "Excellent keyword alignment indicates strong relevance.", "Good keyword match with room for improvement."),
+            ('skill_overlap', 70, 50, "Outstanding skills compatibility.", "Solid skills match."),
+            ('experience_score', 80, 60, "Experience levels align perfectly.", "Experience is reasonably matched."),
+            ('text_similarity', 70, 50, "High overall text similarity suggests strong fit.", "Moderate text similarity."),
+            ('embedding_similarity', 70, 50, "Semantic embedding similarity shows deep contextual match.", "Good semantic alignment in embeddings.")
+        ]
         reasoning_parts = []
-        if details['keyword_overlap'] > 70:
-            reasoning_parts.append("Excellent keyword alignment indicates strong relevance.")
-        elif details['keyword_overlap'] > 50:
-            reasoning_parts.append("Good keyword match with room for improvement.")
-        if details['skill_overlap'] > 70:
-            reasoning_parts.append("Outstanding skills compatibility.")
-        elif details['skill_overlap'] > 50:
-            reasoning_parts.append("Solid skills match.")
-        if details['experience_score'] > 80:
-            reasoning_parts.append("Experience levels align perfectly.")
-        elif details['experience_score'] > 60:
-            reasoning_parts.append("Experience is reasonably matched.")
-        if details['text_similarity'] > 70:
-            reasoning_parts.append("High overall text similarity suggests strong fit.")
-        elif details['text_similarity'] > 50:
-            reasoning_parts.append("Moderate text similarity.")
+        for metric, high_thresh, med_thresh, high_msg, med_msg in reasoning_config:
+            if details[metric] > high_thresh:
+                reasoning_parts.append(high_msg)
+            elif details[metric] > med_thresh:
+                reasoning_parts.append(med_msg)
         if not reasoning_parts:
             reasoning_parts.append("Limited alignment; consider skill gaps or experience mismatch.")
         return " ".join(reasoning_parts)
 
     # Improved prompt for better reasoning
-    prompt = f"Explain the match quality: Keyword overlap {details['keyword_overlap']}%, skill overlap {details['skill_overlap']}%, experience score {details['experience_score']}%, text similarity {details['text_similarity']}%. Provide concise, professional reasoning."
+    prompt = f"Explain the match quality: Keyword overlap {details['keyword_overlap']}%, skill overlap {details['skill_overlap']}%, experience score {details['experience_score']}%, text similarity {details['text_similarity']}%, embedding similarity {details['embedding_similarity']}%. Provide concise, professional reasoning."
     try:
         output = generator(prompt, max_length=60, num_return_sequences=1, temperature=0.7)
         generated = output[0]['generated_text'].strip()
@@ -117,6 +123,38 @@ def calculate_overlap(list1: List[str], list2: List[str]) -> float:
     intersection = len(set1 & set2)
     union = len(set1 | set2)
     return intersection / union if union > 0 else 0
+
+def chunk_text(text: str, chunk_size: int = 200, overlap: int = 50) -> List[str]:
+    """Split text into overlapping chunks for better embedding."""
+    words = text.split()
+    chunks = []
+    for i in range(0, len(words), chunk_size - overlap):
+        chunk = words[i:i + chunk_size]
+        if chunk:
+            chunks.append(' '.join(chunk))
+    return chunks
+
+def calculate_embedding_similarity(text1: str, text2: str) -> float:
+    """Calculate semantic similarity using sentence transformers with chunking."""
+    if not embed_model:
+        return 0.0
+    try:
+        # Chunk texts
+        chunks1 = chunk_text(text1)
+        chunks2 = chunk_text(text2)
+        if not chunks1 or not chunks2:
+            # Fallback to whole text
+            embeddings = embed_model.encode([text1, text2])
+            similarity = cosine_similarity([embeddings[0]], [embeddings[1]])[0][0]
+            return float(similarity)
+        # Embed chunks and average
+        emb1 = embed_model.encode(chunks1).mean(axis=0)
+        emb2 = embed_model.encode(chunks2).mean(axis=0)
+        similarity = cosine_similarity([emb1], [emb2])[0][0]
+        return float(similarity)
+    except Exception as e:
+        print(f"Embedding similarity failed: {e}")
+        return 0.0
 
 def extract_experience_level(data: Dict[str, Any], is_jd: bool) -> int:
     """Extract experience level (years)."""
@@ -195,12 +233,16 @@ def match_jd_resume(jd_data: Dict[str, Any], resume_data: Dict[str, Any]) -> Dic
     tfidf_matrix = vectorizer.transform(texts)
     text_similarity = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])[0][0]
 
+    # Embedding similarity
+    embedding_similarity = calculate_embedding_similarity(jd_text, resume_text)
+
     # Weighted score using config
     weights = MATCH_CONFIG["weights"]
     total_score = (keyword_overlap * weights["keyword_overlap"] +
-                   skill_overlap * weights["skill_overlap"] +
-                   exp_score * weights["experience_score"] +
-                   text_similarity * weights["text_similarity"]) * 100
+                    skill_overlap * weights["skill_overlap"] +
+                    exp_score * weights["experience_score"] +
+                    text_similarity * weights["text_similarity"] +
+                    embedding_similarity * weights["embedding_similarity"]) * 100
     score = round(total_score, 2)
 
     # Generate reasoning using transformer
@@ -208,7 +250,8 @@ def match_jd_resume(jd_data: Dict[str, Any], resume_data: Dict[str, Any]) -> Dic
         "keyword_overlap": round(keyword_overlap * 100, 2),
         "skill_overlap": round(skill_overlap * 100, 2),
         "experience_score": round(exp_score * 100, 2),
-        "text_similarity": round(text_similarity * 100, 2)
+        "text_similarity": round(text_similarity * 100, 2),
+        "embedding_similarity": round(embedding_similarity * 100, 2)
     }
     reasoning = generate_reasoning(details_dict)
 
@@ -239,7 +282,7 @@ def main(jd_file: Optional[str] = None, resume_file: Optional[str] = None, outpu
     base_dir = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
     jd_file = args.jd or os.path.join(base_dir, "data", "processed", "jd1_jd.json")
     resume_file = args.resume or os.path.join(base_dir, "data", "processed", "vivek_resume_tagged.json")
-    output_file = args.output or os.path.join(base_dir, "data", "processed", "match_result.json")
+    output_file = args.output or os.path.join(base_dir, "data", "results", "match_result.json")
 
     if not os.path.exists(jd_file):
         raise FileNotFoundError(f"JD file not found: {jd_file}")
@@ -264,7 +307,33 @@ def main(jd_file: Optional[str] = None, resume_file: Optional[str] = None, outpu
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(output, f, indent=2)
 
-    print(f"✅ Matching complete — result saved in {output_file}")
+    # Save structured data for ML training
+    training_data_file = os.path.join(os.path.dirname(output_file), "training_data.json")
+    training_entry = {
+        "features": {
+            "keyword_overlap": match_result["details"]["keyword_overlap"] / 100,  # Normalize to 0-1
+            "skill_overlap": match_result["details"]["skill_overlap"] / 100,
+            "experience_score": match_result["details"]["experience_score"] / 100,
+            "text_similarity": match_result["details"]["text_similarity"] / 100,
+            "embedding_similarity": match_result["details"]["embedding_similarity"] / 100
+        },
+        "score": match_result["score"] / 100,  # Normalize score to 0-1
+        "timestamp": datetime.now().isoformat()
+    }
+
+    # Load existing or create new
+    if os.path.exists(training_data_file):
+        with open(training_data_file, 'r', encoding='utf-8') as f:
+            training_data = json.load(f)
+    else:
+        training_data = []
+
+    training_data.append(training_entry)
+
+    with open(training_data_file, 'w', encoding='utf-8') as f:
+        json.dump(training_data, f, indent=2)
+
+    print(f"✅ Matching complete — result saved in {output_file}, training data updated in {training_data_file}")
 
 if __name__ == "__main__":
     main()

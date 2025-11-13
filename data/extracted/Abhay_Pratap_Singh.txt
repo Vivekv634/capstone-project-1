@@ -1,0 +1,58 @@
+Abhay Pratap Singh
++91-9236126356
+abhaypratap1968@gmail.com
+LinkedIn
+GitHub
+Education
+Bachelor of Technology in Computer Science and Engineering
+Oct 2022 - Oct 2026
+Galgotias University Greater Noida
+Senior Secondary School (CLASS XII)
+April 2022
+Vishwa Bandhu Academy Gajraula
+Technical Skills
+Programming Languages: C/C++, Java, Python
+Web Development: HTML, CSS, JavaScript, React
+Developer Tools: Git, GitHub, VS Code, IntelliJ
+Areas of Interest: Software Development, Web Development, Artificial Intelligence
+Databases: MySQL
+Experience
+Full Stack Virtual Internship
+January 2025 - March 2025
+EduSkills Academy
+• Acquired practical experience in full-stack development by working on real-world coding tasks and
+troubleshooting technical issues.
+• Improved application efficiency by optimizing code, resolving bugs, and enhancing system performance.
+• Resolved over 50 technical issues, ensuring smooth functionality and improving user experience.
+AI ML Virtual Internship
+July 2024 - September 2024
+Google for Developers
+• Developed and deployed AI-driven solutions using TensorFlow and Scikit-learn, showcasing expertise in
+machine learning.
+• Implemented a real-time face mask detection system achieving 84% accuracy through data preprocessing,
+CNN model development and performance evaluation.
+• Enhanced analytical skills by solving complex problems with AI strategies and working on diverse datasets.
+Projects
+Face Mask Detection using CNN | Python, TensorFlow, OpenCV and Jupyter Notebook GitHub
+• Developed a CNN-based deep learning model to detect face masks using OpenCV and TensorFlow.
+• Applied image preprocessing, model training, and evaluation techniques, ensuring high accuracy in mask
+detection.
+• Integrated live camera feed processing in a shop’s entry point use case, enabling instant mask detection
+without a web interface.
+Image Search Engine | HTML, CSS, JavaScript Github
+• Built a responsive image search application using HTML, CSS, and JavaScript, integrating the Unsplash
+API to fetch high-quality images based on dynamic user queries.
+• Optimized application flow and user input handling, ensuring smooth search functionality and error-free
+interactions.
+• Designed an intuitive user interface with responsive design and pagination features, enhancing user experience
+across multiple devices.
+Certifications
+Full Stack Web Development by Eduskills.
+Acquired hands-on experience in developing full stack web applications using HTML, CSS, JavaScript, React, and Node.js,
+with a focus on responsive design, RESTful API integration, and efficient backend management.
+Artificial Intelligence Fundamentals by IBM.
+Gained foundational knowledge in Artificial Intelligence concepts, including machine learning, deep learning, neural networks,
+and AI applications, through hands-on projects and theoretical learning under IBM’s curriculum.
+Bharat Shiksha Expo Hackathon Certificate.
+Participated in the Bharat Shiksha Expo Hackathon, collaborating on innovative solutions to real-world educational challenges
+while enhancing skills in teamwork, problem-solving, and rapid prototyping.

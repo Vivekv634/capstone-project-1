@@ -1,0 +1,212 @@
+{
+  "filename": "Abhay_Pratap_Singh.txt",
+  "cleaned_text": "Abhay Pratap Singh +91\n-9236126356 abhaypratap1968@gmail.com LinkedIn GitHub Education Bachelor of Technology in Computer Science and Engineering Oct 2022\n- Oct 2026 Galgotias University Greater Noida Senior Secondary School\nC\nL\nASS XII April 2022 Vishwa Bandhu Academy Gajraula Technical Skills Programming Languages: C/C++, Java, Python Web Development: HTML, CSS, JavaScript, React Developer Tools: Git, GitHub, VS Code, IntelliJ Areas of Interest: Software Development, Web Development, Artificial Intelligence Databases: My\nSQL Experience Full Stack Virtual Internship January 2025\n- March 2025 EduSkills Academy\nAcquired practical experience in full\n-stack development by working on real\n-world coding tasks and troubleshooting technical issues.\nImproved application efficiency by optimizing code, resolving bugs, and enhancing system performance.\nResolved over 50 technical issues, ensuring smooth functionality and improving user experience. artificial intelligence machine learning Virtual Internship July 2024\n- September 2024 Google for Developers\nDeveloped and deployed artificial intelligence\n-driven solutions using TensorFlow and Scikit\n-learn, showcasing expertise in machine learning.\nImplemented a real\n-time face mask detection system achieving 84 accuracy through data preprocessing,\nCNN model development and performance evaluation.\nEnhanced analytical skills by solving complex problems with artificial intelligence strategies and working on diverse datasets. Projects Face Mask Detection using\nCNN  Python, TensorFlow, OpenCV and Jupyter Notebook GitHub\nDeveloped a CNN\n-based deep learning model to detect face masks using OpenCV and TensorFlow.\nApplied image preprocessing, model training, and evaluation techniques, ensuring high accuracy in mask detection.\nIntegrated live camera feed processing in a shops entry point use case, enabling instant mask detection without a web interface. Image Search Engine  HTML, CSS, JavaScript Github\nBuilt a responsive image search application using HTML, CSS, and JavaScript, integrating the Unsplash application programming interface to fetch high\n-quality images based on dynamic user queries.\nOptimized application flow and user input handling, ensuring smooth search functionality and error\n-free interactions.\nDesigned an intuitive user interface with responsive design and pagination features, enhancing user experience across multiple devices. Certifications Full Stack Web Development by Eduskills. Acquired hands\n-on experience in developing full stack web applications using HTML, CSS, JavaScript, React, and Node.js, with a focus on responsive design, RESTful application programming interface integration, and efficient backend management. Artificial Intelligence Fundamentals by IBM. Gained foundational knowledge in Artificial Intelligence concepts, including machine learning, deep learning, neural networks, and artificial intelligence applications, through hands\n-on projects and theoretical learning under IBMs curriculum. Bharat Shiksha Expo Hackathon Certificate. Participated in the Bharat Shiksha Expo Hackathon, collaborating on innovative solutions to real\n-world educational challenges while enhancing skills in teamwork, problem\n-solving, and rapid prototyping.",
+  "name": "Abhay Pratap Singh +91\n-9236126356 abhaypratap1968@gmail.com",
+  "contact_info": {
+    "emails": [
+      "abhaypratap1968@gmail.com"
+    ],
+    "phones": [
+      "9236126356",
+      "+91-9236126356"
+    ],
+    "urls": []
+  },
+  "sections_found": {
+    "education": 5,
+    "skills": 12,
+    "experience": 18,
+    "projects": 34,
+    "certifications": 48
+  },
+  "keywords": [
+    "development",
+    "experience",
+    "application",
+    "user",
+    "learning",
+    "mask",
+    "github",
+    "html",
+    "javascript",
+    "stack",
+    "enhance",
+    "detection",
+    "image",
+    "technical",
+    "skill",
+    "code",
+    "artificial",
+    "intelligence",
+    "real",
+    "ensure",
+    "develop",
+    "tensorflow",
+    "face",
+    "model",
+    "search",
+    "responsive",
+    "design",
+    "academy",
+    "python",
+    "react"
+  ],
+  "skills": [
+    "area",
+    "fundamental",
+    "tool",
+    "opencv",
+    "engine",
+    "time",
+    "c++",
+    "tensorflow",
+    "system",
+    "go",
+    "flow",
+    "css",
+    "development",
+    "machine learning",
+    "git",
+    "api",
+    "case",
+    "noida",
+    "html",
+    "query",
+    "management",
+    "mysql",
+    "artificial intelligence",
+    "deep learning",
+    "node.js",
+    "github",
+    "rest",
+    "scikit-learn",
+    "react",
+    "r",
+    "sql",
+    "processing",
+    "image",
+    "javascript",
+    "java",
+    "python"
+  ],
+  "sections": {
+    "summary": "Abhay Pratap Singh\n+91-9236126356\nabhaypratap1968@gmail.com\nLinkedIn\nGitHub",
+    "education": "Education\nBachelor of Technology in Computer Science and Engineering\nOct 2022 - Oct 2026\nGalgotias University Greater Noida\nSenior Secondary School (CLASS XII)\nApril 2022\nVishwa Bandhu Academy Gajraula",
+    "skills": "Technical Skills\nProgramming Languages: C/C++, Java, Python\nWeb Development: HTML, CSS, JavaScript, React\nDeveloper Tools: Git, GitHub, VS Code, IntelliJ\nAreas of Interest: Software Development, Web Development, Artificial Intelligence\nDatabases: MySQL",
+    "experience": "Experience\nFull Stack Virtual Internship\nJanuary 2025 - March 2025\nEduSkills Academy\n\u2022 Acquired practical experience in full-stack development by working on real-world coding tasks and\ntroubleshooting technical issues.\n\u2022 Improved application efficiency by optimizing code, resolving bugs, and enhancing system performance.\n\u2022 Resolved over 50 technical issues, ensuring smooth functionality and improving user experience.\nAI ML Virtual Internship\nJuly 2024 - September 2024\nGoogle for Developers\n\u2022 Developed and deployed AI-driven solutions using TensorFlow and Scikit-learn, showcasing expertise in\nmachine learning.\n\u2022 Implemented a real-time face mask detection system achieving 84% accuracy through data preprocessing,\nCNN model development and performance evaluation.\n\u2022 Enhanced analytical skills by solving complex problems with AI strategies and working on diverse datasets.",
+    "projects": "Projects\nFace Mask Detection using CNN | Python, TensorFlow, OpenCV and Jupyter Notebook GitHub\n\u2022 Developed a CNN-based deep learning model to detect face masks using OpenCV and TensorFlow.\n\u2022 Applied image preprocessing, model training, and evaluation techniques, ensuring high accuracy in mask\ndetection.\n\u2022 Integrated live camera feed processing in a shop\u2019s entry point use case, enabling instant mask detection\nwithout a web interface.\nImage Search Engine | HTML, CSS, JavaScript Github\n\u2022 Built a responsive image search application using HTML, CSS, and JavaScript, integrating the Unsplash\nAPI to fetch high-quality images based on dynamic user queries.\n\u2022 Optimized application flow and user input handling, ensuring smooth search functionality and error-free\ninteractions.\n\u2022 Designed an intuitive user interface with responsive design and pagination features, enhancing user experience\nacross multiple devices.",
+    "certifications": "Certifications\nFull Stack Web Development by Eduskills.\nAcquired hands-on experience in developing full stack web applications using HTML, CSS, JavaScript, React, and Node.js,\nwith a focus on responsive design, RESTful API integration, and efficient backend management.\nArtificial Intelligence Fundamentals by IBM.\nGained foundational knowledge in Artificial Intelligence concepts, including machine learning, deep learning, neural networks,\nand AI applications, through hands-on projects and theoretical learning under IBM\u2019s curriculum.\nBharat Shiksha Expo Hackathon Certificate.\nParticipated in the Bharat Shiksha Expo Hackathon, collaborating on innovative solutions to real-world educational challenges\nwhile enhancing skills in teamwork, problem-solving, and rapid prototyping."
+  },
+  "structured_info": {
+    "experience_details": [
+      {
+        "company": "EduSkills Academy\n\u2022 Acquired",
+        "period": "January 2025 - March 2025",
+        "description": "Experience\nFull Stack Virtual Internship\nJanuary 2025 - March 2025\nEduSkills Academy\n\u2022 Acquired practical experience in full-stack development by working on real-world coding tasks and\ntroubleshooting technical issues.\n"
+      },
+      {
+        "company": "AI ML Virtual Internship",
+        "period": "July 2024 - September 2024",
+        "description": "AI ML Virtual Internship\nJuly 2024 - September 2024\nGoogle for Developers\n\u2022 Developed and deployed AI-driven solutions using TensorFlow and Scikit-learn, showcasing expertise in\nmachine learning.\n\u2022 Implemented a real-time face mask detection system achieving 84% accuracy through data preprocessing,\nCNN model development and performance evaluation.\n"
+      },
+      {
+        "company": "AI",
+        "period": "",
+        "description": "\u2022 Enhanced analytical skills by solving complex problems with AI strategies and working on diverse datasets."
+      }
+    ],
+    "education_details": [
+      {
+        "institution": "Galgotias University Greater Noida",
+        "degree": "Bachelor",
+        "description": "Education\nBachelor of Technology in Computer Science and Engineering\nOct 2022 - Oct 2026\nGalgotias University Greater Noida\nSenior Secondary School (CLASS XII)\nApril 2022\nVishwa Bandhu Academy Gajraula"
+      }
+    ],
+    "skills_details": [
+      "code",
+      "software",
+      "area",
+      "html",
+      "language",
+      "react",
+      "tool",
+      "development",
+      "developer",
+      "python",
+      "javascript",
+      "intelligence",
+      "mysql",
+      "github",
+      "programming",
+      "interest",
+      "database",
+      "intellij"
+    ],
+    "entities": {
+      "PERSON": [
+        "Abhay Pratap Singh\n+91-9236126356",
+        "Java",
+        "Jupyter Notebook GitHub\n\u2022 Developed",
+        "JavaScript Github\n\u2022 Built",
+        "Expo Hackathon"
+      ],
+      "ORG": [
+        "Galgotias University Greater Noida",
+        "XII",
+        "Vishwa Bandhu Academy",
+        "Gajraula\nTechnical Skills\nProgramming Languages: C/C++",
+        "CSS",
+        "JavaScript",
+        "Areas of Interest: Software Development",
+        "EduSkills Academy\n\u2022 Acquired",
+        "AI ML Virtual Internship",
+        "TensorFlow",
+        "\u2022 Implemented",
+        "CNN",
+        "\u2022 Enhanced",
+        "AI",
+        "CNN",
+        "TensorFlow",
+        "CNN",
+        "TensorFlow",
+        "\u2022 Applied",
+        "Image Search Engine",
+        "HTML",
+        "CSS",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "\u2022 Optimized",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "API",
+        "IBM",
+        "Artificial Intelligence",
+        "IBM"
+      ],
+      "DATE": [
+        "April 2022",
+        "January 2025 - March 2025",
+        "July 2024 - September 2024"
+      ],
+      "PRODUCT": [
+        "VS Code"
+      ],
+      "CARDINAL": [
+        "50"
+      ],
+      "PERCENT": [
+        "84%"
+      ],
+      "GPE": [
+        "React",
+        "Node.js",
+        "AI"
+      ],
+      "NORP": [
+        "Bharat"
+      ]
+    }
+  }
+}

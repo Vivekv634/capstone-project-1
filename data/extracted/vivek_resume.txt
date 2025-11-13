@@ -1,0 +1,47 @@
+VIVEK VAISH
++91-7417378004 ⋄Greater Noida
+vaishvivek634@gmail.com ⋄LinkedIn ⋄Portfolio
+ACADEMIC DETAILS
+B.tech CSE (AIML), Galgotias University
+Expected 2026
+CGPA: 7
+BRB Model School
+2022
+Percentage: 85.4%
+BRB Model School
+2020
+Percentage: 75.8%
+EXPERIENCE
+• AIML INTERNSHIP (VIRTUAL)
+October 2024 - December 2024
+– Engineered high-precision AI models for face recognition and object detection, enhancing accuracy by 15%
+through advanced deep learning techniques.
+TECHNICAL SKILLS
+• Programming Languages: Python, Javascript, Typescript, Java, C, C++
+• Web Technologies: React.js, Next.js, TailwindCSS
+• Backend Technologies: Node.js, Express.js, Firebase
+• Tools: Git, Postman, Docker
+PROJECTS
+• Search & Ranking Algorithm for User Matching - Python, Scikit-learn, Pandas
+January 2025
+– Developed an advanced rule-based ranking system to dynamically sort and prioritize search results based
+on experience, rating, and user preferences.
+– Implemented multi-criteria filtering that allows users to search by name, location, and multiple skills, sup-
+porting flexible and precise queries.
+– Designed a dynamic sorting algorithm enabling users to rank search results by experience, rating, or both
+simultaneously, improving result relevance.
+– Optimized query performance for large datasets, ensuring real-time search and sorting with minimal latency.
+• Autobook - Typescript, Google Firebase, Shadcn/UI, TailwindCSS
+July 2024
+– Developed a dynamic note-taking application using React.js and Redux for an interactive and state-managed
+frontend, enhancing user productivity.
+– Engineered a secure and scalable backend using Firebase, integrating Firestore for real-time data storage
+and Firebase Storage for efficient file management.
+– Integrated a third-party email service to automate note generation email notifications, improving user en-
+gagement and communication.
+– Standardized data structures and API contracts using TypeScript interfaces, resulting in a 25% decrease in
+data-related bugs.
+ACHIEVEMENTS
+• Participated & developed an RL-based price optimization model in a Code Kshetra 2.0 hackathon, leveraging
+Q-learning and ML simulations to maximize sales and conversions.
+• Completed a certified web development course, mastering modern frameworks and tools.
